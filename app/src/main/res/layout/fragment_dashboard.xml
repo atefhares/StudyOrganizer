@@ -1,0 +1,449 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardRelated.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:background="#f0f0f9"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Date Shows here"
+                android:id="@+id/curDateTV"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:background="#5d5a5f"
+                android:padding="10dp" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="30px" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="#bbe1e1e1"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quick Overview"
+                        android:padding="10dp"
+                        android:textColor="#fd164d9f"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:elegantTextHeight="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:rowCount="2"
+                        android:columnCount="2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:measureWithLargestChild="false"
+                                android:id="@+id/TodayClassesHL"
+                                android:background="@drawable/ripple_effect_square">
+
+                                <TextView
+                                    tools:ignore="RtlCompat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#960000"
+                                    android:id="@+id/TodayClassesNoTV"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="40sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Classes Today"
+                                    android:textColor="#000000"
+                                    android:id="@+id/t1"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    tools:ignore="RtlCompat"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:measureWithLargestChild="false"
+                                android:id="@+id/TomorrowClassesHL"
+                                android:background="@drawable/ripple_effect_square">
+
+                                <TextView
+                                    tools:ignore="RtlCompat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#960000"
+                                    android:id="@+id/TomorrowClassesNoTV"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="40sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Classes Tommorow"
+                                    android:textColor="#000000"
+                                    android:id="@+id/t3"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="1"
+                                    android:layout_columnWeight="1"
+                                    android:clickable="false"
+                                    android:longClickable="false"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    tools:ignore="RtlCompat"
+                                    android:layout_weight="1"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:measureWithLargestChild="false"
+                                android:id="@+id/TodayExamsHL"
+                                android:background="@drawable/ripple_effect_square">
+
+                                <TextView
+                                    tools:ignore="RtlCompat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#960000"
+                                    android:id="@+id/TodayExams_no_TV"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="40sp" />
+
+                                <TextView
+                                    tools:ignore="RtlCompat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#960000"
+                                    android:id="@+id/textView4"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="40sp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    tools:ignore="RtlCompat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#960000"
+                                    android:id="@+id/textView3"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="40sp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Exams today"
+                                    android:textColor="#000000"
+                                    android:id="@+id/t4"
+                                    android:layout_weight="1"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="1"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:clickable="false"
+                                    android:longClickable="false"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    tools:ignore="RtlCompat"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:measureWithLargestChild="false"
+                                android:id="@+id/Next7ExamsHL"
+                                android:background="@drawable/ripple_effect_square">
+
+                                <TextView
+                                    tools:ignore="RtlCompat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#960000"
+                                    android:id="@+id/next_7_Exams_No_TV"
+                                    android:longClickable="false"
+                                    android:clickable="false"
+                                    android:layout_rowWeight="1"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:gravity="fill_vertical"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="40sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Exams in the next 7 days"
+                                    android:textColor="#000000"
+                                    android:id="@+id/t2"
+                                    android:clickable="false"
+                                    android:longClickable="false"
+                                    android:textAlignment="textStart"
+                                    tools:ignore="RtlCompat"
+                                    android:paddingLeft="3dp"
+                                    android:gravity="fill_vertical"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="30px" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="30px" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ClassesCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="#bbe1e1e1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remaining Classes Today"
+                    android:padding="10dp"
+                    android:textColor="#fd164d9f"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:elegantTextHeight="false" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="30px" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Classes For Today"
+                        android:id="@+id/NoClassesTV"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="visible"
+                        android:gravity="center_horizontal" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ClassesVL"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"></LinearLayout>
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="30px" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="30px" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ExamsCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTintMode="src_over"
+                android:backgroundTint="#bbe1e1e1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining Exams Today"
+                        android:padding="10dp"
+                        android:textColor="#fd164d9f"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:elegantTextHeight="false" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="30px" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Exams For Today"
+                        android:id="@+id/NoExamsTV"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="visible"
+                        android:gravity="center_horizontal" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ExamsVL"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" />
+
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="30px" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="30px" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--app:titleTextAppearance="@style/ToolbarTitle"-->
+        <!--android:background="?attr/colorPrimary"/>-->
+
+
+    <!--&lt;!&ndash;<android.support.v4.view.PagerTabStrip&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@color/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tab_strip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:focusableInTouchMode="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:titleTextAppearance="@style/ToolbarTitle"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@android:style/TextAppearance.Large">&ndash;&gt;-->
+        <!--&lt;!&ndash;</android.support.v4.view.PagerTabStrip>&ndash;&gt;-->
+
+
+
+    <com.example.atefhares.study_organizer.SlidingTabesLayout.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SelectableItemBackground"
+        android:background="@color/colorPrimary"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:elevation="5dp">
+    </com.example.atefhares.study_organizer.SlidingTabesLayout.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context=".MainActivity"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

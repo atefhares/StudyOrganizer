@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atefhares.study_organizer">
+
+    <permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivityRelated.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewOrEditActivities.AddOrEditClassActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".NewOrEditActivities.AddOrEditYearActivity" />
+        <activity
+            android:name=".NewOrEditActivities.AddOrEditExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewOrEditActivities.AddOrEditTimeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NormalActionBarActivity" />
+        <activity
+            android:name=".NewOrEditActivities.AddOrEditTermActivity"
+            android:theme="@style/NormalActionBarActivity" />
+        <activity android:name=".NewOrEditActivities.ClassDetailsActivity" />
+        <activity android:name=".NewOrEditActivities.ExamDetailsActivity" />
+
+        <receiver
+            android:name=".notifications_related.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".notifications_related.MyService"></service>
+
+        <activity android:name=".ManageFiles.SettingsActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="423dp"
+        android:layout_height="191dp"
+        android:id="@+id/textView31"
+        android:background="@drawable/cover"
+        android:text="StudyOrgaizer 1.0 (Beta)"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="150dp" />
+
+</RelativeLayout>

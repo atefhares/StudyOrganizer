@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolBarStyle" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:text="New Text"
+        android:id="@+id/ClassErrorTV"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#9f1010"
+        android:textStyle="bold"
+        android:elegantTextHeight="false"
+        android:typeface="serif" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LayoutDivider" />
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.example.atefhares.study_organizer.NewOrEditActivities.AddOrEditClassActivity"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_weight="0">
+
+                        <EditText
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ClassName"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="@string/class_name"
+                            android:maxLength="30"
+                            android:textSize="20sp"
+                            android:background="#00000000"
+                            android:textColor="#433f3f" />
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="1dp"
+                        android:background="@color/LayoutDivider" />
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ClassModule"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/module"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        android:textSize="20sp"
+                        android:background="#00000000"
+                        android:textColor="#433f3f" />
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="1dp"
+                        android:background="@color/LayoutDivider" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Color"
+                            android:id="@+id/textView32"
+                            android:layout_gravity="center" />
+
+                        <Spinner
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Colors_Spinner"
+                            android:dropDownWidth="wrap_content"
+                            android:spinnerMode="dropdown"
+                            android:layout_gravity="right" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LayoutDivider" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/place"
+                        android:layout_gravity="center_vertical" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/ClassPlace"
+                        android:hint="@string/place"
+                        android:inputType="text|time"
+                        android:maxLength="15"
+                        android:textSize="20sp"
+                        android:background="#00000000"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:textColor="#433f3f"
+                        android:paddingRight="20dp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LayoutDivider" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/person" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/InstructorTV"
+                        android:hint="@string/instructor"
+                        android:inputType="text"
+                        android:maxLength="15"
+                        android:textSize="20sp"
+                        android:background="#00000000"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:textColor="#433f3f"
+                        android:paddingRight="20dp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LayoutDivider" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/yearicon"
+                        android:layout_marginBottom="100dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_academic_year_term"
+                            android:id="@+id/textView27" />
+
+                        <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Year:"
+                                android:id="@+id/textView25"
+                                android:layout_gravity="center"
+                                android:paddingRight="50dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textAlignment="center"
+                                android:gravity="left|center" />
+
+                            <Spinner
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/YearSpinner"
+                                android:spinnerMode="dialog"
+                                android:dropDownWidth="wrap_content"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:layout_marginRight="30dp"
+                                android:gravity="left" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/LayoutDivider" />
+                        <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Term:"
+                                android:id="@+id/textView26"
+                                android:layout_gravity="center"
+                                android:paddingRight="50dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textAlignment="center"
+                                android:gravity="left|center" />
+
+                            <Spinner
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/TermSpinner"
+                                android:spinnerMode="dialog"
+                                android:dropDownWidth="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:gravity="left" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LayoutDivider" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/imageView4"
+                            android:src="@drawable/times" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_time"
+                                android:id="@+id/addNewTime"
+                                android:textSize="20sp"
+                                android:textColor="#b80c0c"
+                                android:background="@drawable/ripple_effect_square"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="20dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:id="@+id/VL"
+                                android:animateLayoutChanges="true"
+                                android:layout_weight="1"
+                                android:paddingRight="20dp">
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LayoutDivider"
+                    android:padding="20dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="Delete this Class"
+                    android:id="@+id/DeleteTV"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="#9e0101" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

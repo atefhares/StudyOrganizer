@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You have&apos;t added any Classes"
+        android:id="@+id/NoClassesTV"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="#b6b2b2" />
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.example.atefhares.daynamicsviews.ClassesActivity"
+        android:id="@+id/ClassesFragmentListView"
+        android:drawSelectorOnTop="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false" >
+    </ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/plus"
+        android:tint="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/ripple_effect_square2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp" />
+</RelativeLayout>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Calendar.CalendarFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:textAlignment="center"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24"
+                android:textSize="10dp"
+                android:textColor="#000000"
+                android:background="@drawable/shape_for_calendar_activity"
+                android:layout_gravity="bottom" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_for_calendar_activity"
+                android:layout_weight="1"
+                android:weightSum="7">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sat"
+                    android:id="@+id/SatTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sun"
+                    android:id="@+id/SunTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon"
+                    android:id="@+id/MonTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tue"
+                    android:id="@+id/TueTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed"
+                    android:id="@+id/WedTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu"
+                    android:id="@+id/ThuTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri"
+                    android:id="@+id/FriTextView"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/SV"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="70dp"
+                    android:text="00 am"
+                    android:id="@+id/h12am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="01am"
+                    android:id="@+id/h1am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="02am"
+                    android:id="@+id/h2am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="03am"
+                    android:id="@+id/h3am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="04am"
+                    android:id="@+id/h4am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="05am"
+                    android:id="@+id/h5am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="06am"
+                    android:id="@+id/h6am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="07am"
+                    android:id="@+id/h7am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="08am"
+                    android:id="@+id/h8am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="09am"
+                    android:id="@+id/h9am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="10am"
+                    android:id="@+id/h10am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="11 am"
+                    android:id="@+id/h11am"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="12 pm"
+                    android:id="@+id/h12pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="01 pm"
+                    android:id="@+id/h1pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="02 pm"
+                    android:id="@+id/h2pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="03 pm"
+                    android:id="@+id/h3pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="04 pm"
+                    android:id="@+id/h4pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="05 pm"
+                    android:id="@+id/h5pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="06 pm"
+                    android:id="@+id/h6pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="07 pm"
+                    android:id="@+id/h7pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="08 pm"
+                    android:id="@+id/h8pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="09 pm"
+                    android:id="@+id/h9pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="10 pm"
+                    android:id="@+id/h10pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:text="11 pm"
+                    android:id="@+id/h11pm"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RL"
+                android:background="#b4ffffff"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/SatdayColumn"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:autoText="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/SundayColumn"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_toRightOf="@+id/MondayColumn"-->
+                        <!--android:layout_toEndOf="@+id/MondayColumn"-->
+                        <!--android:autoText="false"-->
+                        <!--android:layout_weight="1" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/MondayColumn"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_toRightOf="@+id/SatdayColumn"-->
+                        <!--android:layout_toEndOf="@+id/SatdayColumn"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:autoText="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/TuesdayColumn"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_toRightOf="@+id/SundayColumn"-->
+                        <!--android:layout_toEndOf="@+id/SundayColumn"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:autoText="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/WednesdayColumn"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_toRightOf="@+id/TuesdayColumn"-->
+                        <!--android:layout_toEndOf="@+id/TuesdayColumn"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:autoText="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/ThursdayColumn"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_toRightOf="@+id/WednesdayColumn"-->
+                        <!--android:layout_toEndOf="@+id/WednesdayColumn"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:autoText="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:id="@+id/FridayColumn"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_toRightOf="@+id/ThursdayColumn"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:autoText="false" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView33"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:layout_alignParentEnd="false"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:clickable="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView34"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView35"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView2"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView36"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView3"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView37"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView4"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView38"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView5"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView39"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView6"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView40"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView7"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView41"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView8"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView42"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView9"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView43"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView10"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView44"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView11"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView45"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView12"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView46"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView13"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView47"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView14"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView48"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView15"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView49"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView16"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView50"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView17"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView51"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView18"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView52"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView19"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView53"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView20"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false"-->
+                        <!--android:layout_alignParentRight="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView54"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView21"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false"-->
+                        <!--android:layout_alignParentRight="false"-->
+                        <!--android:layout_alignParentLeft="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView55"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView22"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false"-->
+                        <!--android:layout_alignParentRight="false"-->
+                        <!--android:layout_alignParentLeft="false" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:id="@+id/textView56"-->
+                        <!--android:background="@drawable/gride_lines_shape"-->
+                        <!--android:layout_below="@+id/textView23"-->
+                        <!--android:layout_alignParentStart="false"-->
+                        <!--android:clickable="false"-->
+                        <!--android:layout_alignParentEnd="false"-->
+                        <!--android:layout_alignParentRight="false"-->
+                        <!--android:layout_alignParentLeft="false" />-->
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

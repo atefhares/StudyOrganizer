@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LL"
+    android:weightSum="1">
+    <!--style="@style/SelectableItemBackground">-->
+    <!--android:background="?android:selectableItemBackground"-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:id="@+id/textView59"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textColor="#ffffff" />
+
+    <!--android:background="?android:selectableItemBackground" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Year | Current Term"
+        android:id="@+id/Year_Term_TV"
+        android:textIsSelectable="false"
+        android:textSize="15dp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Classes and Exams assigned to a term will appear once you select that term."
+        android:id="@+id/textView"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LayoutDivider" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/VL"
+            android:layout_weight="1">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/LayoutDivider" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Term"
+        android:id="@+id/Current_Term"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corners_shape2" />
+
+</LinearLayout>

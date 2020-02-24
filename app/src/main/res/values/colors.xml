@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5177f5</color>
+    <color name="colorPrimaryDark">#4869d9</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="CalendarCurrentDay">#1e7a94ed</color>
+
+    <color name="CurrentTime_Line">#e6072f</color>
+    <color name="HalfHoursTime_Line">#d0a8a9a8</color>
+    <color name="LayoutDivider">#ababab</color>
+
+
+    <color name="Class_Color1">#b0d671</color>
+    <color name="Class_Color2">#69d102</color>
+    <color name="Class_Color3">#5aa666</color>
+
+    <color name="Class_Color4">#1b31c2</color>
+    <color name="Class_Color5">#166ec4</color>
+    <color name="Class_Color6">#285581</color>
+
+    <color name="Class_Color7">#ffd700</color>
+    <color name="Class_Color8">#f1e1d536</color>
+    <color name="Class_Color9">#dec403</color>
+
+    <color name="Class_Color10">#9e2020</color>
+    <color name="Class_Color11">#ee2c2c</color>
+    <color name="Class_Color12">#e16c6c</color>
+
+    <color name="Class_Color13">#9400d3</color>
+    <color name="Class_Color14">#e71386</color>
+    <color name="Class_Color15">#a90e62</color>
+
+    <color name="Class_Color16">#ffa202</color>
+    <color name="Class_Color17">#ac6910</color>
+    <color name="Class_Color18">#e19950</color>
+
+    <color name="Class_Color19">#0f9d9f</color>
+    <color name="Class_Color20">#6dc6cf</color>
+
+
+
+    <color name="ripple_color">#76085115</color>
+
+    <color name="finishedDay">#5aefeeee</color>
+</resources>

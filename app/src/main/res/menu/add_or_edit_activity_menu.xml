@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Save"
+        android:icon="@drawable/right"
+        android:title="Save"
+        app:showAsAction="always"
+        android:orderInCategory="0"
+        android:background="?android:selectableItemBackground"/>
+</menu>
