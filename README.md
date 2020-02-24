@@ -18,50 +18,34 @@ Android application works as a calendar and scheduler for classes/exams/subjects
 
 ## Getting Started
 
-how to run the server:
+how to run the App:
 
-- open project in netbeans or intellij idea
-- open File -> Project Properties -> Libraries and make sure that all libraries from libs folder are included
-- open ClientController.java and configure the attribute SERVER_ADDRESS to the server ip address
+- open project in Android Studio
 - clean, build and run
 
-how to run the client:
-- open project in netbeans or intellij idea
-- open File -> Project Properties -> Libraries and make sure that all libraries from libs folder are included
-- clean, build and run
-- before starting server make sure there is a mysql server at the "localhost" on port 3306
-   also add a user named "test" with password "!Pass12345678" plus please allow this user's access on database names "tictactoe"
 
 ### Prerequisites
 
-- java 8 or higher recommended
-- firewall configured for socket communications.
+- Android 5.0 or higher
 
 ## Database Schema
 
-![hg](https://github.com/atefhares/XO-Game-Pro-Server/blob/master/database_erd.png)
+![](https://github.com/atefhares/StudyOrganizer/blob/master/db.jpg)
 
 ## Features
 
 Client Side Features:</br>
-- login
-- SignUp
-- play with pc
-- play with online friends
-- chat while playing
-- see who has the highest score in the game
-- see who is online offline or busy playing with someone else
-
-Server side Features:</br>
-- see a list of all users</br>
-- see players status and score</br>
-- close and reopen the server</br>
+- Ability to add academic years and adding terms to these years.
+- Ability to add classes’ schedule and adding Exams.
+- A Weekly Calendar for easily showing the classes’ schedule per week.
+- Notifying the user with the Classes/Exams times.
+- Reminding the student with the deadlines of unfinished assignments.
 
 
 ## Built With
 
-* [MySQL](https://dev.mysql.com/downloads/connector/j/) - JDBC Type 4 driver for MySQL
-* [JSON-Simple](https://code.google.com/archive/p/json-simple/) -  A simple Java toolkit for JSON
+* [Sqlite](https://sqlite.org/index.html)
+* [Material Design](https://material.io/design/)
 
 
 ## License
