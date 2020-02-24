@@ -1,7 +1,6 @@
 # StudyOrganizer
 ![](https://forthebadge.com/images/badges/built-for-android.svg)
 ![](https://forthebadge.com/images/badges/made-with-java.svg)
-![](http://ForTheBadge.com/images/badges/built-with-love.svg)
 
 Android application works as a calendar and scheduler for classes/exams/subjects
 
