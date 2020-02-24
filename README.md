@@ -1,4 +1,5 @@
 # StudyOrganizer
+![](https://forthebadge.com/images/badges/built-for-android.svg)
 ![](https://forthebadge.com/images/badges/made-with-java.svg)
 ![](http://ForTheBadge.com/images/badges/built-with-love.svg)
 
