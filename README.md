@@ -34,7 +34,6 @@ how to run the App:
 
 ## Features
 
-Client Side Features:</br>
 - Ability to add academic years and adding terms to these years.
 - Ability to add classes’ schedule and adding Exams.
 - A Weekly Calendar for easily showing the classes’ schedule per week.
